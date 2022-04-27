@@ -16,6 +16,8 @@
 		1F6DD9D028110B4400FAF2A3 /* lifecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9CF28110B4400FAF2A3 /* lifecounterTests.swift */; };
 		1F6DD9DA28110B4400FAF2A3 /* lifecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9D928110B4400FAF2A3 /* lifecounterUITests.swift */; };
 		1F6DD9DC28110B4400FAF2A3 /* lifecounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9DB28110B4400FAF2A3 /* lifecounterUITestsLaunchTests.swift */; };
+		1F6DD9EA2819375600FAF2A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */; };
+		1F6DD9EB2819375600FAF2A3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1F6DD9D528110B4400FAF2A3 /* lifecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DD9D928110B4400FAF2A3 /* lifecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITests.swift; sourceTree = "<group>"; };
 		1F6DD9DB28110B4400FAF2A3 /* lifecounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				1F6DD9C128110B4400FAF2A3 /* Assets.xcassets */,
 				1F6DD9C328110B4400FAF2A3 /* LaunchScreen.storyboard */,
 				1F6DD9C628110B4400FAF2A3 /* Info.plist */,
+				1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */,
+				1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */,
 			);
 			path = lifecounter;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6DD9C528110B4400FAF2A3 /* LaunchScreen.storyboard in Resources */,
+				1F6DD9EB2819375600FAF2A3 /* TableViewCell.xib in Resources */,
 				1F6DD9C228110B4400FAF2A3 /* Assets.xcassets in Resources */,
 				1F6DD9C028110B4200FAF2A3 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6DD9BD28110B4200FAF2A3 /* ViewController.swift in Sources */,
+				1F6DD9EA2819375600FAF2A3 /* TableViewCell.swift in Sources */,
 				1F6DD9B928110B4200FAF2A3 /* AppDelegate.swift in Sources */,
 				1F6DD9BB28110B4200FAF2A3 /* SceneDelegate.swift in Sources */,
 			);
