@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var history = ["Started Counter"]
+    
     var playersInGame = [
         "Player 1",
         "Player 2",
@@ -28,6 +30,14 @@ class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let history = history
+        
+        let destinationVC = segue.destination as! HistoryViewController
+        destinationVC.historyArray = history
+        
+    }
+    
     @IBAction func removePlayer(_ sender: Any) {
         if playersInGame.count <= 2 {
             print("Too little players")
@@ -40,10 +50,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addPlayer(_ sender: Any) {
-        if playersInGame.count > 8 {
+        if playersInGame.count >= 8 {
             print("Too many players")
         } else {
-            playersInGame.append("Player \(playersInGame.count)")
+            playersInGame.append("Player \(playersInGame.count + 1)")
             tableView.reloadData()
         }
     }

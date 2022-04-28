@@ -18,6 +18,7 @@
 		1F6DD9DC28110B4400FAF2A3 /* lifecounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9DB28110B4400FAF2A3 /* lifecounterUITestsLaunchTests.swift */; };
 		1F6DD9EA2819375600FAF2A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */; };
 		1F6DD9EB2819375600FAF2A3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */; };
+		1F6DD9F1281AAF4500FAF2A3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9F0281AAF4500FAF2A3 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1F6DD9DB28110B4400FAF2A3 /* lifecounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		1F6DD9F0281AAF4500FAF2A3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				1F6DD9C628110B4400FAF2A3 /* Info.plist */,
 				1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */,
 				1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */,
+				1F6DD9F0281AAF4500FAF2A3 /* HistoryViewController.swift */,
 			);
 			path = lifecounter;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				1F6DD9BD28110B4200FAF2A3 /* ViewController.swift in Sources */,
 				1F6DD9EA2819375600FAF2A3 /* TableViewCell.swift in Sources */,
 				1F6DD9B928110B4200FAF2A3 /* AppDelegate.swift in Sources */,
+				1F6DD9F1281AAF4500FAF2A3 /* HistoryViewController.swift in Sources */,
 				1F6DD9BB28110B4200FAF2A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
