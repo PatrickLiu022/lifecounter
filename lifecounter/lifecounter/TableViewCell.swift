@@ -12,8 +12,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var playerLabel : UILabel!
     @IBOutlet weak var lifeLabel: UILabel!
     
-    @IBOutlet weak var minusTextInput: UITextField!
-    @IBOutlet weak var plusTextInput: UITextField!
+    @IBOutlet weak var minusInput: UITextField!
+    @IBOutlet weak var plusInput: UITextField!
+    
     
     var lifeRemaining : Int = 20
     
@@ -29,16 +30,24 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func minusAmountFromLife(_ sender: Any) {
-        let amountToSubtract = Int(minusTextInput.text!)!
-        lifeLabel.text = "\(lifeRemaining - amountToSubtract)"
-        lifeRemaining -= amountToSubtract
+    @IBAction func minusButton(_ sender: Any) {
+        let inputVal = Int(minusInput.text!)!
+        lifeRemaining -= inputVal
+        lifeLabel.text = "\(lifeRemaining)"
+        
     }
     
-    @IBAction func plusAmountFromLife(_ sender: Any) {
-        let amountToAdd = Int(plusTextInput.text!)!
-        lifeLabel.text = "\(lifeRemaining + amountToAdd)"
-        lifeRemaining += amountToAdd
+    @IBAction func plusButton(_ sender: Any) {
+        print("click plus button")
+        let inputVal = Int(plusInput.text!)!
+        lifeRemaining += inputVal
+        lifeLabel.text = "\(lifeRemaining)"
+    }
+    
+    @IBAction func disableWhenNegativeLife(_ sender: Any) {
+        if (lifeRemaining <= 0) || (lifeRemaining - Int(minusInput.text!)! <= 0) {
+            print("PLAYER LOST")
+        }
     }
     
 }

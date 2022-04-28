@@ -11,12 +11,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let defaultPlayersWhenGameStarts = [
+    var playersInGame = [
         "Player 1",
         "Player 2",
         "Player 3",
         "Player 4"
     ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,25 @@ class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
+    @IBAction func removePlayer(_ sender: Any) {
+        if playersInGame.count <= 2 {
+            print("Too little players")
+        } else {
+            playersInGame.removeLast()
+            print("Player \(playersInGame.count)")
+            tableView.reloadData()
+            
+        }
+    }
+    
+    @IBAction func addPlayer(_ sender: Any) {
+        if playersInGame.count > 8 {
+            print("Too many players")
+        } else {
+            playersInGame.append("Player \(playersInGame.count)")
+            tableView.reloadData()
+        }
+    }
 }
 
 extension ViewController: UITableViewDelegate {
@@ -36,12 +56,12 @@ extension ViewController: UITableViewDelegate {
 }
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return defaultPlayersWhenGameStarts.count
+        return playersInGame.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        cell.playerLabel.text = defaultPlayersWhenGameStarts[indexPath.row]
+        cell.playerLabel.text = playersInGame[indexPath.row]
         return cell
     }
 }

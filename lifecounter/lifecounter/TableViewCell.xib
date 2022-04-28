@@ -28,6 +28,10 @@
                         <buttonConfiguration key="configuration" style="plain" title="-">
                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="disableWhenNegativeLife:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="faP-TZ-frT"/>
+                            <action selector="minusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hrI-WQ-lGI"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bW-Nd-Hcn">
                         <rect key="frame" x="226" y="53.5" width="59.5" height="60"/>
@@ -37,11 +41,13 @@
                     </label>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ta-7z-ZCH">
                         <rect key="frame" x="65" y="61" width="116" height="45"/>
+                        <accessibility key="accessibilityConfiguration" identifier="minusTextInput"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2W-Y1-EH9">
                         <rect key="frame" x="330.5" y="61" width="115.5" height="45"/>
+                        <accessibility key="accessibilityConfiguration" identifier="addTextInput"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
@@ -51,6 +57,9 @@
                         <buttonConfiguration key="configuration" style="plain" title="+">
                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="plusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GN6-E7-jT3"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -79,7 +88,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lifeLabel" destination="8bW-Nd-Hcn" id="Qy3-ap-jQT"/>
+                <outlet property="minusInput" destination="2ta-7z-ZCH" id="Dbh-DD-ebV"/>
                 <outlet property="playerLabel" destination="HmE-sl-lFF" id="Tmy-F0-kjG"/>
+                <outlet property="plusInput" destination="u2W-Y1-EH9" id="D74-lZ-COb"/>
             </connections>
             <point key="canvasLocation" x="242.75362318840581" y="71.986607142857139"/>
         </tableViewCell>
