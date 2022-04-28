@@ -41,7 +41,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        cell.textLabel?.text = defaultPlayersWhenGameStarts[indexPath.row]
+        cell.playerLabel.text = defaultPlayersWhenGameStarts[indexPath.row]
         return cell
     }
 }
