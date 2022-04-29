@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="FbQ-Hr-GMC">
             <objects>
-                <viewController id="XDb-vy-TSf" sceneMemberID="viewController">
+                <viewController id="XDb-vy-TSf" customClass="HistoryViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E0B-ng-WSw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +104,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UUW-uh-e1m"/>
+                    <connections>
+                        <outlet property="historyTableView" destination="9No-jg-cBz" id="uQs-5y-xYX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJr-9h-MrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

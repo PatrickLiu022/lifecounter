@@ -19,6 +19,8 @@
 		1F6DD9EA2819375600FAF2A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */; };
 		1F6DD9EB2819375600FAF2A3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */; };
 		1F6DD9F1281AAF4500FAF2A3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9F0281AAF4500FAF2A3 /* HistoryViewController.swift */; };
+		1F6DD9F4281B646F00FAF2A3 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DD9F2281B646F00FAF2A3 /* HistoryTableViewCell.swift */; };
+		1F6DD9F5281B646F00FAF2A3 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DD9F3281B646F00FAF2A3 /* HistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		1F6DD9F0281AAF4500FAF2A3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		1F6DD9F2281B646F00FAF2A3 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1F6DD9F3281B646F00FAF2A3 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				1F6DD9E82819375600FAF2A3 /* TableViewCell.swift */,
 				1F6DD9E92819375600FAF2A3 /* TableViewCell.xib */,
 				1F6DD9F0281AAF4500FAF2A3 /* HistoryViewController.swift */,
+				1F6DD9F2281B646F00FAF2A3 /* HistoryTableViewCell.swift */,
+				1F6DD9F3281B646F00FAF2A3 /* HistoryTableViewCell.xib */,
 			);
 			path = lifecounter;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6DD9C528110B4400FAF2A3 /* LaunchScreen.storyboard in Resources */,
+				1F6DD9F5281B646F00FAF2A3 /* HistoryTableViewCell.xib in Resources */,
 				1F6DD9EB2819375600FAF2A3 /* TableViewCell.xib in Resources */,
 				1F6DD9C228110B4400FAF2A3 /* Assets.xcassets in Resources */,
 				1F6DD9C028110B4200FAF2A3 /* Main.storyboard in Resources */,
@@ -268,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6DD9F4281B646F00FAF2A3 /* HistoryTableViewCell.swift in Sources */,
 				1F6DD9BD28110B4200FAF2A3 /* ViewController.swift in Sources */,
 				1F6DD9EA2819375600FAF2A3 /* TableViewCell.swift in Sources */,
 				1F6DD9B928110B4200FAF2A3 /* AppDelegate.swift in Sources */,

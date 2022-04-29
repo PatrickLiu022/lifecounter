@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             playersInGame.removeLast()
             print("Player \(playersInGame.count)")
             tableView.reloadData()
-            
+            history.append("Player \(playersInGame.count + 1) removed")
         }
     }
     
@@ -55,6 +55,7 @@ class ViewController: UIViewController {
         } else {
             playersInGame.append("Player \(playersInGame.count + 1)")
             tableView.reloadData()
+            history.append("Player \(playersInGame.count) added")
         }
     }
 }
